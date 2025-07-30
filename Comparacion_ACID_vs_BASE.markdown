@@ -23,9 +23,3 @@
 | **Soporte para big data**       | Limitado; no está diseñado para manejar datos no estructurados o distribuidos a gran escala. | Diseñado específicamente para big data, con soporte para datos no estructurados y alta concurrencia. |
 | **Teorema CAP**                 | Prioriza Consistencia y Tolerancia a Particiones (CP).                   | Prioriza Disponibilidad y Tolerancia a Particiones (AP).                 |
 | **Ejemplo práctico**            | Transferencia bancaria: $100 se debitan de una cuenta y se acreditan en otra, garantizando que ambas operaciones se completen o ninguna lo haga. | Feed de red social: un usuario puede ver una publicación ligeramente desactualizada mientras los nodos se sincronizan. |
-
-## **Notas adicionales**
-- **ACID** es ideal para aplicaciones donde la integridad de los datos es crítica y los errores no son tolerables, como sistemas financieros o de reservas.
-- **BASE** es adecuado para aplicaciones modernas que requieren alta disponibilidad y escalabilidad, como redes sociales, sistemas de recomendación o análisis de datos en tiempo real.
-- Enfoques híbridos como **NewSQL** (por ejemplo, CockroachDB, Spanner) combinan propiedades ACID con escalabilidad distribuida, mientras que algunas bases de datos NoSQL (como MongoDB) permiten configurar niveles de consistencia según la operación.
-- La elección entre ACID y BASE depende de los requisitos específicos de la aplicación, como la tolerancia a inconsistencias, la necesidad de escalabilidad y la criticidad de los datos.
